@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WESPORT Live</title>
+    <script src="https://cdn.jsdelivr.net/npm/clappr@latest/dist/clappr.min.js"></script>
+    <style>
+        body { background-color: #121212; color: #ffffff; font-family: sans-serif; text-align: center; margin: 0; padding: 20px; }
+        #player { max-width: 800px; margin: 0 auto; box-shadow: 0 4px 15px rgba(0,0,0,0.5); }
+        .cta-box { max-width: 760px; margin: 20px auto; padding: 20px; background-color: #1e1e1e; border-left: 4px solid #ffaa00; text-align: left; }
+        .promo-text { font-size: 16px; line-height: 1.6; color: #cccccc; }
+        .highlight { color: #ffaa00; font-weight: bold; }
+        .telegram-btn { display: inline-block; margin-top: 10px; padding: 10px 20px; background-color: #0088cc; color: white; text-decoration: none; border-radius: 5px; font-weight: bold; }
+    </style>
+</head>
+<body>
+
+    <h2>WESPORT Live - ညီအစ်ကိုများ ဆုံရပ်</h2>
+    
+    <div id="player"></div>
+
+    <script>
+        var player = new Clappr.Player({
+            // အောက်ပါ နေရာတွင် ဘောပွဲလွှင့်မည့် .m3u8 လင့်ခ်ကို အစားထိုးထည့်ပါ
+            source: "https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8", 
+            parentId: "#player",
+            autoPlay: true,
+            width: '100%',
+            height: '450px'
+        });
+    </script>
+
+    <div class="cta-box">
+        <div class="promo-text">
+            သူများတွေ နိုင်ပွဲရပြီး ရှေ့ရောက်နေတာကို ထိုင်ကြည့်နေရုံပဲလား? ဒီပွဲတွေဟာ ကြည့်ရုံသက်သက်နဲ့ ပြီးသွားမယ့် ပွဲတွေမဟုတ်ဘူး။ တကယ့် ညီအစ်ကိုတွေပဲ သိတဲ့ အခွင့်အရေးနဲ့ နေရာတစ်နေရာ အခုပဲ ဦးထားလိုက်ပါ။ လူတိုင်းအတွက်တော့ မဟုတ်ဘူးနော်။<br><br>
+            သီးသန့်နေရာအတွက် <span class="highlight">WinExpress99</span> မှာ ဆက်သွယ်လိုက်ပါ။<br>
+            အထူး Promo Code: <span class="highlight">ZINXBET</span>
+        </div>
+        <a href="https://t.me/WinExpress99" class="telegram-btn" target="_blank">Telegram မှ တစ်ဆင့် အခုပဲ နေရာယူရန်</a>
+    </div>
+
+</body>
+</html>
