@@ -1,50 +1,197 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="my" class="dark">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WESPORT Live</title>
-    <script src="https://cdn.jsdelivr.net/npm/clappr@latest/dist/clappr.min.js"></script>
-    <style>
-        body { background-color: #121212; color: #ffffff; font-family: sans-serif; text-align: center; margin: 0; padding: 20px; }
-        #player { max-width: 800px; margin: 0 auto; box-shadow: 0 4px 15px rgba(0,0,0,0.5); border-radius: 8px; overflow: hidden; background: #000; }
-        .cta-box { max-width: 760px; margin: 25px auto; padding: 20px; background-color: #1e1e1e; border-left: 5px solid #ffaa00; text-align: left; border-radius: 4px; }
-        .promo-text { font-size: 17px; line-height: 1.7; color: #dddddd; }
-        .highlight { color: #ffaa00; font-weight: bold; }
-        .telegram-btn { display: inline-block; margin-top: 15px; padding: 12px 25px; background-color: #0088cc; color: white; text-decoration: none; border-radius: 5px; font-weight: bold; }
-    </style>
-</head>
-<body>
-
-    <h2 style="margin-bottom: 20px;">WESPORT Live - ညီအစ်ကိုများ ဆုံရပ်</h2>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#0B1120">
+    <meta name="description" content="True Odds Pro - AI-Powered Betting Predictions and Live Odds">
     
-    <div id="player"></div>
-
+    <!-- Preconnects -->
+    <link rel="preconnect" href="https://cpservm.com">
+    
+    <title>True Odds Pro | Smart Betting Predictions</title>
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8LWM1G7R31"></script>
     <script>
-        var player = new Clappr.Player({
-            // အစ်ကို့ရဲ့ Playback ID အစစ်ကို ထည့်ပေးထားပါတယ်
-            source: "https://stream.mux.com/E8eZf02sdT6bkrQC15IR8C7KPFi9aKRLivZTDk2kmRUs.m3u8", 
-            parentId: "#player",
-            autoPlay: true,
-            width: '100%',
-            height: '450px',
-            playback: {
-                playInline: true,
-                hlsjsConfig: {
-                    enableWorker: true
-                }
-            }
-        });
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-8LWM1G7R31');
     </script>
 
-    <div class="cta-box">
-        <div class="promo-text">
-            သူများတွေ နိုင်ပွဲရပြီး ရှေ့ရောက်နေတာကို ထိုင်ကြည့်နေရုံပဲလား? ဒီပွဲတွေဟာ ကြည့်ရုံသက်သက်နဲ့ ပြီးသွားမယ့် ပွဲတွေမဟုတ်ဘူး။ တကယ့် ညီအစ်ကိုတွေပဲ သိတဲ့ အခွင့်အရေးနဲ့ နေရာတစ်နေရာ အခုပဲ ဦးထားလိုက်ပါ။ လူတိုင်းအတွက်တော့ မဟုတ်ဘူးနော်။<br><br>
-            သီးသန့်နေရာအတွက် <span class="highlight">WinExpress99</span> မှာ ဆက်သွယ်လိုက်ပါ။<br>
-            အထူး Promo Code: <span class="highlight">ZINXBET</span>
-        </div>
-        <a href="https://t.me/WinExpress99" class="telegram-btn" target="_blank">Telegram မှ တစ်ဆင့် အခုပဲ နေရာယူရန်</a>
-    </div>
+    <!-- Tailwind Config for True Odds Pro -->
+    <script>
+        tailwind = {};
+        tailwind.config = { 
+            darkMode: 'class', 
+            theme: { 
+                extend: { 
+                    colors: { 
+                        brand: { 
+                            bg: '#0B1120',      // Deep Navy Background
+                            card: '#111827',    // Slightly lighter card
+                            cardHover: '#1E293B',
+                            green: '#00E676',   // Neon Green for Win Tips
+                            gold: '#FFD700',    // Gold for VIP/Medium Risk
+                            blue: '#3B82F6',
+                            border: '#1F2937'
+                        } 
+                    } 
+                } 
+            } 
+        };
+    </script>
+    <script src="tailwind.js" defer></script>
+    <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" onload="this.onload=null;this.rel='stylesheet'">
+    
+    <style>
+        body { background-color: #0B1120; margin: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; -webkit-tap-highlight-color: transparent; color: #E2E8F0; }
+        .hide-scrollbar::-webkit-scrollbar { display: none; }
+        .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        
+        @keyframes fadeSlideUp { from { opacity: 0; transform: translateY(15px); } to { opacity: 1; transform: translateY(0); } }
+        .animate-fade-up { animation: fadeSlideUp 0.5s cubic-bezier(0.4, 0, 0.2, 1) both; }
+        .animate-pulse-slow { animation: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite; }
+        
+        /* Modern Cards */
+        .glass-panel { background: linear-gradient(145deg, #111827 0%, #0F172A 100%); border: 1px solid #1F2937; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.5); overflow: hidden; }
+        .odds-box { background: #0B1120; border: 1px solid #1F2937; border-radius: 8px; text-align: center; padding: 8px 4px; transition: all 0.2s; }
+        .odds-box:hover { border-color: #3B82F6; background: #1E293B; }
+        
+        /* AI Tip Banner */
+        .tip-banner-high { background: linear-gradient(90deg, rgba(0,230,118,0.1) 0%, rgba(0,0,0,0) 100%); border-left: 4px solid #00E676; }
+        .tip-banner-med { background: linear-gradient(90deg, rgba(255,215,0,0.1) 0%, rgba(0,0,0,0) 100%); border-left: 4px solid #FFD700; }
+        
+        /* Bottom Nav */
+        .bottom-nav-item { flex:1; display:flex; flex-direction:column; align-items:center; justify-content:center; padding:10px 2px; cursor:pointer; transition: all 0.2s; color: #64748B; }
+        .bottom-nav-item.active { color: #00E676; }
+        .bottom-nav-item.active .nav-icon { transform: translateY(-3px) scale(1.1); text-shadow: 0 0 15px rgba(0,230,118,0.5); }
+        
+        .tab-content { display:none; }
+        .tab-content.active { display:block; }
+        
+        button:active, a:active { transform: scale(0.96); transition: transform 0.1s; }
+        
+        #main-loader { position: fixed; inset: 0; background: #0B1120; z-index: 9999; display: flex; flex-direction: column; justify-content: center; align-items: center; transition: opacity 0.4s; }
+        .radar-spinner { width: 50px; height: 50px; border: 3px solid transparent; border-top-color: #00E676; border-radius: 50%; animation: spin 1s linear infinite; margin-bottom: 15px; box-shadow: 0 0 15px rgba(0,230,118,0.2); }
+        @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+        
+        @supports (padding-bottom: env(safe-area-inset-bottom)) {
+            .pb-safe { padding-bottom: calc(env(safe-area-inset-bottom) + 10px); }
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col items-center">
 
-</body>
-</html>
+<!-- Initial Loader -->
+<div id="main-loader">
+    <div class="radar-spinner"></div>
+    <h1 class="text-white font-black text-xl tracking-widest uppercase">True Odds <span class="text-brand-green">Pro</span></h1>
+    <p class="text-slate-500 text-[10px] mt-2 font-bold tracking-widest uppercase">Analyzing Market Data...</p>
+</div>
+
+<!-- Header -->
+<header class="w-full max-w-2xl sticky top-0 bg-brand-bg/95 backdrop-blur-md z-40 border-b border-brand-border">
+    <div class="flex justify-between items-center px-5 py-4">
+        <div class="flex items-center space-x-3">
+            <div class="w-10 h-10 bg-gradient-to-tr from-brand-green to-blue-500 rounded-xl flex items-center justify-center shadow-[0_0_15px_rgba(0,230,118,0.3)]">
+                <i class="fas fa-chart-line text-white text-xl"></i>
+            </div>
+            <div>
+                <h1 class="text-lg font-black text-white tracking-wide uppercase leading-tight">True Odds <span class="text-brand-green">Pro</span></h1>
+                <p class="text-[9px] text-brand-gold font-bold uppercase tracking-widest">AI-Powered Betting Tips</p>
+            </div>
+        </div>
+        <div>
+            <a href="https://reffpa.com/L?tag=d_5044643m_97c_&site=5044643&ad=97&r=registration" target="_top" class="bg-[#111827] border border-brand-green text-brand-green px-3 py-1.5 rounded-lg text-[10px] font-black uppercase shadow-[0_0_10px_rgba(0,230,118,0.2)] flex items-center gap-1.5">
+                <i class="fas fa-gift animate-bounce"></i> Bonus
+            </a>
+        </div>
+    </div>
+    
+    <!-- Top Nav Filters -->
+    <div class="flex px-4 pb-3 gap-3 overflow-x-auto hide-scrollbar">
+        <button onclick="switchTab('tab-picks', this)" data-tab="tab-picks" class="tab-btn shrink-0 bg-brand-green text-black px-4 py-2 rounded-lg font-black text-[12px] shadow-[0_4px_15px_rgba(0,230,118,0.3)] flex items-center gap-2">
+            <i class="fas fa-bolt"></i> Top Picks
+        </button>
+        <button onclick="switchTab('tab-all', this)" data-tab="tab-all" class="tab-btn shrink-0 bg-brand-card text-slate-400 border border-brand-border px-4 py-2 rounded-lg font-bold text-[12px] flex items-center gap-2">
+            <i class="fas fa-list"></i> All Matches
+        </button>
+        <button onclick="switchTab('tab-promo', this)" data-tab="tab-promo" class="tab-btn shrink-0 bg-brand-card text-slate-400 border border-brand-border px-4 py-2 rounded-lg font-bold text-[12px] flex items-center gap-2">
+            <i class="fas fa-star text-brand-gold"></i> VIP Promos
+        </button>
+    </div>
+</header>
+
+<!-- Main Content -->
+<main class="w-full max-w-2xl px-4 pb-24 pt-4">
+    
+    <!-- TOP PICKS TAB -->
+    <section id="tab-picks" class="tab-content active space-y-4">
+        <!-- Hero Banner -->
+        <div class="glass-panel p-5 relative">
+            <div class="absolute -right-4 -bottom-4 text-7xl opacity-5"><i class="fas fa-robot"></i></div>
+            <div class="relative z-10">
+                <div class="inline-block bg-brand-bg border border-brand-border text-brand-green text-[9px] font-black px-2 py-1 rounded mb-3 uppercase tracking-widest">System Status: Online</div>
+                <h2 class="text-[16px] font-black text-white mb-2 leading-snug">
+                    <span class="text-brand-gold">100%</span> အလိုအလျောက် တွက်ချက်ထားသော<br>ဒီနေ့အတွက် အကောင်းဆုံးပွဲများ
+                </h2>
+                <p class="text-[11px] text-slate-400 font-bold mb-4">1XBET ၏ တိုက်ရိုက်ကြေးများ (Live Odds) ကို အခြေခံ၍ System မှ အနိုင်ရနိုင်ခြေ အများဆုံးအသင်းများကို ရွေးချယ်ပေးထားပါသည်။</p>
+                
+                <div class="bg-gradient-to-r from-[#111827] to-[#0B1120] border border-brand-gold/30 rounded-xl p-3 flex justify-between items-center">
+                    <div>
+                        <div class="text-[10px] text-slate-400 uppercase font-bold tracking-widest mb-0.5">Use Promo Code</div>
+                        <div class="text-lg font-black text-brand-gold tracking-widest">ZINXBET</div>
+                    </div>
+                    <button onclick="copyPromo('ZINXBET', this)" class="bg-brand-gold text-black px-4 py-2 rounded-lg text-[11px] font-black shadow-md flex items-center gap-1">
+                        <i class="fas fa-copy"></i> COPY
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex items-center justify-between px-1 mt-6 mb-2">
+            <h3 class="text-[14px] font-black text-white flex items-center gap-2"><i class="fas fa-fire text-brand-gold"></i> High Confidence Picks</h3>
+            <span class="text-[10px] text-slate-500 font-bold uppercase" id="top-picks-count">Loading...</span>
+        </div>
+        
+        <!-- High Confidence Matches Container -->
+        <div id="top-picks-container" class="space-y-4">
+            <div class="text-center py-10 text-slate-500 text-[11px] font-bold"><i class="fas fa-sync-alt fa-spin text-2xl mb-3 block"></i> Analyzing live market data...</div>
+        </div>
+    </section>
+
+    <!-- ALL MATCHES TAB -->
+    <section id="tab-all" class="tab-content space-y-4">
+        <!-- Date Selector -->
+        <div id="date-selector" class="flex overflow-x-auto hide-scrollbar gap-2 pb-2 mb-2">
+            <!-- Rendered by JS -->
+        </div>
+        
+        <div id="all-matches-container" class="space-y-4">
+            <div class="text-center py-10 text-slate-500 text-[11px] font-bold"><i class="fas fa-spinner fa-spin text-2xl mb-3 block"></i> Fetching odds...</div>
+        </div>
+    </section>
+
+    <!-- PROMOS & VIP TAB -->
+    <section id="tab-promo" class="tab-content space-y-4">
+        <div class="glass-panel p-6 text-center">
+            <i class="fas fa-crown text-5xl text-brand-gold mb-4 drop-shadow-[0_0_15px_rgba(255,215,0,0.5)]"></i>
+            <h2 class="text-xl font-black text-white mb-2 uppercase tracking-wide">1XBET VIP Member</h2>
+            <p class="text-[12px] text-slate-400 font-bold mb-6 leading-relaxed">
+                True Odds Pro ၏ ခန့်မှန်းချက်များဖြင့် ကစားရန် အကောင်းဆုံး 1XBET တွင် ယခုပဲ အကောင့်ဖွင့်လိုက်ပါ။ ပထမဆုံး ငွေသွင်းမှုအတွက် <span class="text-brand-green">၁၀၀% ဘောနပ်စ်</span> အပြည့်ရရှိပါမည်။
+            </p>
+            
+            <a href="https://reffpa.com/L?tag=d_5044643m_97c_&site=5044643&ad=97&r=registration" target="_top" class="w-full bg-brand-green text-black py-4 rounded-xl font-black text-[14px] uppercase tracking-wider shadow-[0_0_20px_rgba(0,230,118,0.3)] block mb-4">
+                <i class="fas fa-user-plus mr-2"></i> Register on 1XBET
+            </a>
+            <a href="https://t.me/WinExpress99" target="_blank" class="w-full bg-[#111827] border border-brand-border text-white py-4 rounded-xl font-black text-[13px] uppercase tracking-wider block">
+                <i class="fas fa-headset mr-2 text-brand-blue"></i> 24/7 Deposit & Withdraw
+            </a>
+        </div>
+    </section>
+</main>
+
+<!-- Bottom Navigation -->
+<nav class="fixed bottom-0 left-0 w-full z-40 flex justify-center pb-
